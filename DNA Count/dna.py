@@ -1,7 +1,6 @@
 ######################
 # Import libraries
 ######################
-
 import pandas as pd
 import streamlit as st
 import altair as alt
@@ -45,9 +44,7 @@ def DNA_nucleotide_count(seq):
   return d
 
 X = DNA_nucleotide_count(sequence)
-
 X
-
 st.subheader('Composition')
 st.write('There are  ' + str(X['A']) + ' adenine (A)')
 st.write('There are  ' + str(X['T']) + ' thymine (T)')
